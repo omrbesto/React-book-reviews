@@ -82,6 +82,7 @@ const DUMMY_BOOKLISTS = [
 const BooksPreview = (props) => {
   const createBookLists = DUMMY_BOOKLISTS.map((book) => (
     <Book
+      key={Math.random().toString()}
       title={book.title}
       author={book.author}
       bookImg={book.bookImg}

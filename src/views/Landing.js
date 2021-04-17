@@ -7,6 +7,7 @@ import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
 import LoremIpsum from "react-lorem-ipsum";
 import BooksPreview from "components/BooksPreview/BooksPreview";
+import Quote from "components/Quote/Quote";
 
 export default function Landing() {
   return (
@@ -27,22 +28,7 @@ export default function Landing() {
               className="w-full h-full absolute opacity-75 bg-black"
             ></span>
           </div>
-          <div className="container relative mx-auto">
-            <div className="items-center flex flex-wrap">
-              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
-                  <h1 className="text-white font-semibold text-4xl">
-                    Deciding what to read next
-                  </h1>
-                  <p className="mt-4 text-lg text-blueGray-200">
-                    You’re in the right place. Tell us what titles or genres
-                    you’ve enjoyed in the past, and we’ll give you surprisingly
-                    insightful recommendations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Quote />
           <div
             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
             style={{ transform: "translateZ(0)" }}
@@ -182,41 +168,6 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-1-800x800.jpg").default}
-                    className="shadow-lg rounded-full mx-auto max-w-120-px"
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">ณัฐพล ใจจริง</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      ขอฝันใฝ่ในฝันอันเหลือเชื่อ
-                    </p>
-                    {/* <div className="mt-6">
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                    </div> */}
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
                     src={require("assets/img/team-2-800x800.jpg").default}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
@@ -272,6 +223,41 @@ export default function Landing() {
                         type="button"
                       >
                         <i className="fab fa-instagram"></i>
+                      </button>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                <div className="px-6">
+                  <img
+                    alt="..."
+                    src={require("assets/img/team-1-800x800.jpg").default}
+                    className="shadow-lg rounded-full mx-auto max-w-120-px"
+                  />
+                  <div className="pt-6 text-center">
+                    <h5 className="text-xl font-bold">ณัฐพล ใจจริง</h5>
+                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
+                      ขอฝันใฝ่ในฝันอันเหลือเชื่อ
+                    </p>
+                    {/* <div className="mt-6">
+                      <button
+                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-twitter"></i>
+                      </button>
+                      <button
+                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-facebook-f"></i>
+                      </button>
+                      <button
+                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-dribbble"></i>
                       </button>
                     </div> */}
                   </div>

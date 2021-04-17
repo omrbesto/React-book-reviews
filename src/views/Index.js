@@ -1,7 +1,6 @@
-/*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
-import { LoremIpsum } from 'react-lorem-ipsum';
+import { LoremIpsum } from "react-lorem-ipsum";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
@@ -18,10 +17,8 @@ export default function Index() {
                 Book Review Application
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                This is a book review web application na ja  🙈🙉🙊
+                This is a book review web application na ja 🙈🙉🙊
                 <LoremIpsum p={1} />
-                
-                
               </p>
               <div className="mt-12">
                 <a
