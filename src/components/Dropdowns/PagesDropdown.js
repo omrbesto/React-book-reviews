@@ -76,7 +76,7 @@ const PagesDropdown = () => {
           Poetry
         </Link>
         <Link
-          to="/profile"
+          to="/allGenre"
           className="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
         >
           All Genres
