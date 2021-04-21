@@ -1,0 +1,22 @@
+.genres {
+    color: salmon;
+    width: 60%;
+    margin: 16px;
+    border: 1px solid #ffffff; /*#000000*/
+    box-shadow: 0 2px 3px #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+
+  .imgs {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .title{
+    color: black;
+  }
+
+  .rates{
+    color: red;
+  }
