@@ -30,6 +30,7 @@ import InsImg3 from "../assets/books/ins3.png";
 import ManImg1 from "../assets/books/man1.png";
 import ManImg2 from "../assets/books/man2.png";
 import ManImg3 from "../assets/books/man3.png";
+import Navbar from "./components/Navbars/AuthNavbar";
 
 const Page6 = () => {
   const genres = [
@@ -47,10 +48,18 @@ const Page6 = () => {
 
   const personLists = genres.map((props) => {
     //console.log(props.name);
-    return <Genres name={props.name} bt1={props.bt1} bt2={props.bt2} bt3={props.bt3} bi1={props.bi1} bi2={props.bi2} bi3={props.bi3} rating1={props.rating1} rating2={props.rating2} rating3={props.rating3} />;
+    return <Genres name={props.name} bt1={props.bt1} bt2={props.bt2} bt3={props.bt3} 
+    bi1={props.bi1} bi2={props.bi2} bi3={props.bi3} rating1={props.rating1} rating2={props.rating2} rating3={props.rating3} />;
   });
 
-  return <Fragment>{personLists}</Fragment>;
+  return (
+  <Fragment>
+    <Navbar transparent />
+      <main>
+    {personLists}
+    </main>
+    </Fragment>
+  );
 };
 
 export default Page6;
